@@ -1,5 +1,11 @@
+import CocktailDetail from "./CocktailDetail";
+
 const App = () => {
-  return <div>I am an application</div>;
+  return (
+    <div>
+      <CocktailDetail />
+    </div>
+  );
 };
 
 export default App;
