@@ -1,9 +1,7 @@
 import styled from "styled-components";
 
-const H3 = styled.h3`
+const Paragraph = styled.p`
   font-family: "Lucinda Grande", sans-serif;
-  font-size: 25px;
-  margin: 0;
 `;
 
-export default H3;
+export default Paragraph;
