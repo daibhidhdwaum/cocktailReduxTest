@@ -17,7 +17,11 @@ class CocktailList extends Component {
               return <p key={index}>{ingredient}</p>;
             })}
           </div>
-          <Button>Recipe</Button>
+          <Button
+            onClick={() => console.log(this.props.selectCocktail(cocktail))}
+          >
+            Recipe
+          </Button>
         </Card>
       );
     });
@@ -28,7 +32,7 @@ class CocktailList extends Component {
 }
 
 const mapStateToProps = (state) => {
-  console.log(state);
+  // console.log(state);
   return { cocktails: state.cocktails };
 };
 

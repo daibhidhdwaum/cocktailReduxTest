@@ -15,6 +15,7 @@ const Button = styled.button`
     color: #fffffc;
     background-color: tomato;
     border-color: #fffffc;
+    cursor: pointer;
   }
 `;
 
