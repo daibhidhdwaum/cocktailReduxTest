@@ -1,21 +1,24 @@
 import React, { Component } from "react";
 import { connect } from "react-redux";
 import { selectCocktail } from "../actions";
+import Card from "./Card";
+import H3 from "./H3";
+import Button from "./Button";
 
 class CocktailList extends Component {
   renderList = () => {
     return this.props.cocktails.map((cocktail) => {
       return (
-        <div key={cocktail.id}>
+        <Card key={cocktail.id}>
           <div>
-            <h3>{cocktail.name}</h3>
+            <H3>{cocktail.name}</H3>
             <h4>Base Ingredients</h4>
             {cocktail.baseIngredient.map((ingredient, index) => {
               return <p key={index}>{ingredient}</p>;
             })}
           </div>
-          <button>Recipe</button>
-        </div>
+          <Button>Recipe</Button>
+        </Card>
       );
     });
   };

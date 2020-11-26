@@ -1,11 +1,17 @@
 import CocktailList from "./CocktailList";
 import CocktailDetail from "./CocktailDetail";
+import Wrapper from "./Wrapper";
+import Container from "./Container";
 
 const App = () => {
   return (
-    <div className="cocktailInfo">
-      <CocktailList />
-      <CocktailDetail />
+    <div>
+      <Wrapper>
+        <Container>
+          <CocktailDetail />
+          <CocktailList />
+        </Container>
+      </Wrapper>
     </div>
   );
 };

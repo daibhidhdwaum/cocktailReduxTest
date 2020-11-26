@@ -1,6 +1,6 @@
 const CocktailDetail = (props) => {
   console.log(props);
-  return <div>This is the cocktail Details section</div>;
+  return <div>Click a cocktail to display recipe</div>;
 };
 
 export default CocktailDetail;
