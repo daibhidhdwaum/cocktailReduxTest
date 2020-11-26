@@ -1,12 +1,6 @@
-import { connect } from "react-redux";
-
-const CocktailDetail = () => {
+const CocktailDetail = (props) => {
+  console.log(props);
   return <div>This is the cocktail Details section</div>;
 };
 
-const mapStateToProps = (state) => {
-  console.log(state);
-  return { cocktail: state.selectedSong };
-};
-
-export default connect(mapStateToProps)(CocktailDetail);
+export default CocktailDetail;

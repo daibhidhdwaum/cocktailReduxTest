@@ -1,8 +1,10 @@
+import CocktailList from "./CocktailList";
 import CocktailDetail from "./CocktailDetail";
 
 const App = () => {
   return (
-    <div>
+    <div className="cocktailInfo">
+      <CocktailList />
       <CocktailDetail />
     </div>
   );
